@@ -1,5 +1,6 @@
 import { View, Text, FlatList, Touchable, TouchableOpacity ,Image} from 'react-native'
 import React from 'react'
+import tailwind from 'tailwind-react-native-classnames';
 
 const data =[
     {
@@ -25,7 +26,7 @@ const NavOptions = () => {
     keyExtractor={(item)=>item.id}
     horizontal
     renderItem={({item})=>(
-        <TouchableOpacity>
+        <TouchableOpacity style={tailwind`p-2 pl-6 pb-8 pt-4bg-red-200 m-2 w-40`}>
       
         <View>
             <Image 
